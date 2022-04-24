@@ -29,8 +29,7 @@ const pAequorFactory = (dna, specimenNum) =>{
                } else {
                    randBase = returnRandBase(); // if ARE EQUAL run again until they are not 
                    this.dna.splice(randNum, 1, randBase); 
-                   const mutated = this.dna;
-                   return mutated;
+                   return this.dna;
                }
            },
            //compare current strand to previous
